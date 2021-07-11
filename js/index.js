@@ -1,6 +1,17 @@
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+// const toggleBtn = document.getElementById('nav-toggle')
+// const navbar = document.getElementById('nav-menu')
+
+// toggleBtn.addEventListener('click', ()=>{
+//     if(navbar.style.top === -100%){
+//         navbar.style.display = 'block'
+//     }
+//     else{
+//         navbar.style.display = 'none'
+//     }
+// })
+const showMenu = () =>{
+    const toggle = document.getElementById('nav-toggle')
+    const nav = document.getElementById('nav-menu')
 
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
@@ -9,7 +20,10 @@ const showMenu = (toggleId, navId) =>{
     }
 }
 
-showMenu('nav-toggle', 'nav-menu');
+showMenu();
+
+
+// showMenu('nav-toggle', 'nav-menu');
 
 // close pop uo 
 const showPopUp = document.querySelectorAll('#vid-content');
