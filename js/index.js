@@ -23,9 +23,7 @@ const showMenu = () =>{
 showMenu();
 
 
-// showMenu('nav-toggle', 'nav-menu');
-
-// close pop uo 
+// close pop up and open pop up 
 const showPopUp = document.querySelectorAll('#vid-content');
 const containerPopUp = document.getElementById('popup');
 const closeBtn = document.getElementById('close');
@@ -48,17 +46,23 @@ displayPopUp()
 
 
 
-// swiper js framework i used
+// swiper js framework in used
 let swiper = new Swiper(".mySwiper", {
     spaceBetween: 0,
     slidesPerView: 0,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-  });
-  let swiper2 = new Swiper(".mySwiper2", {
+});
+
+let swiper2 = new Swiper(".mySwiper2", {
     effect: 'fade',
     thumbs: {
-      swiper: swiper,
+        swiper: swiper,
     },
-  });
+});
+
+let swiper3 = new Swiper(".mySlide", {
+    slidesPerView: 3,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+});
